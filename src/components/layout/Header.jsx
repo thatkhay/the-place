@@ -9,7 +9,7 @@ import shopingCartIcon from "../../assets/shopping-cart-icon.svg";
 const Header = () => {
   return (
     <div className="w-full pt-2 pb-2 pl-20 pr-20  h-[4.25rem] flex items-center justify-between">
-      <div className="flex items-center w-[65%]  justify-between">
+      <div className="flex items-center w-[70%]  justify-between">
         <img src={menueIcon} alt="" className="h-[0.75rem] w-[1.125rem]" />
         <img src={logo} alt="" className="h-[2.5rem] w-[3.75rem]" />
         <div className="border-2 border-[#D9DCE2] h-[2.75rem] w-[17.5rem] flex items-center justify-between rounded-[.3rem] pl-4 pr-4">

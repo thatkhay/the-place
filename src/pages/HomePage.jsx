@@ -41,7 +41,7 @@ const HomePage = () => {
         </div>
         <div>
           <div>
-            <div className="flex w-[31rem] items-center justify-between pr-[2rem]">
+            <div className="flex w-[31rem] items-center justify-between pr-[3rem]">
               <h5 className="font-bold text-[1.6rem]">The place - Admiralty</h5>
               <img src={swooppersIcon} alt="" />
               <span className=" font-bold text-[2rem] text-[#FD6E5D] mt-[-1.5rem]">
@@ -49,7 +49,7 @@ const HomePage = () => {
               </span>
               <img src={pickupIcon} alt="" />
             </div>
-            <div className="flex w-[18.8rem] h-[3remS] items-center justify-between ">
+            <div className="flex w-[18.8rem] h-[3rem] items-center justify-between mt-6">
               <div className="flex flex-col">
                 <p>Open until</p> <p>3:00PM</p>
               </div>
@@ -57,12 +57,14 @@ const HomePage = () => {
                 <p>Delivery fee</p> <p>from #250</p>
               </div>
               <div className="flex items-center">
-                <img src={starIcon} alt="" /> <span>4.5</span>
+                <img src={starIcon} alt="" className="mr-2" /> <span>4.5</span>
               </div>
             </div>
-            <div>
-
+            <div className="flex items-center bg-[#00E3A4] w-[37.75rem] h-[3rem] px-8 rounded-[.4rem] mt-6">
+              <img src={tagIcon} alt="" className="mr-4 " />
+              <p>12 % off some selected products</p>
             </div>
+            <div></div>
           </div>
         </div>
       </div>
