@@ -151,35 +151,35 @@ const HomePage = () => {
                 <div>
                   <div className="flex">
                     <img src={loveEyeEmoji} alt="" />
-                    <img src={progressBarOne} alt="" />
+                    <img src={progressBarOne} alt=""  className=" px-2 " />
                     <span>245</span>
                   </div>
                   <div className="flex">
                     <img src={fullSmileEmoji} alt="" />
-                    <img src={progressBarFive} alt="" />
-                    <span>245</span>
+                    <img src={progressBarFive} alt="" className=" px-2 "/>
+                    <span>30</span>
                   </div>
                   <div className="flex">
                     <img src={grinEmoji} alt="" />
-                    <img src={progressBarFive} alt="" />
-                    <span>245</span>
+                    <img src={progressBarFive} alt="" className=" px-2 "/>
+                    <span>20</span>
                   </div>
                   <div className="flex">
                     <img src={sadEmoji} alt="" />
-                    <img src={progressBarThree} alt="" />
-                    <span>245</span>
+                    <img src={progressBarThree} alt="" className=" px-2 "/>
+                    <span>10</span>
                   </div>
                   <div className="flex">
                     <img src={cryEmoji} alt="" />
-                    <img src={progressBarTwo} alt="" />
-                    <span>245</span>
+                    <img src={progressBarTwo} alt="" className=" px-2 "/>
+                    <span>05</span>
                   </div>
                 </div>
               </div>
               <div className="mt-[2rem]">
                 <div className="flex items-center justify-between w-[36rem] mb-2">
                   <h5 className="text-[#48505E] font-bold">Gideon O .</h5>
-                  <p className="text-[#667085]">August 25, 2023</p>
+                  <p className="text-[#667085] text-[0.75rem]">August 25, 2023</p>
                 </div>
                 <div className="flex w-[1.87rem] mb-2">
                   <img src={starIcon} alt="starIcon" className="mr-2 " />
