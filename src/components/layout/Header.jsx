@@ -25,15 +25,15 @@ const Header = () => {
             className="border-2 border-[#D9DCE2] h-[2.75rem] w-[23.5rem] flex items-center rounded-[.3rem] pl-8"
           />
           <div className="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
-            <img src={searchIcon} alt="" />
+            <img src={searchIcon} alt="searchIcon" />
           </div>
         </div>
       </div>
 
       <div className="flex items-center justify-between pr-2 pl-2 rounded-[3rem] h-[1.6rem] w-[6.5rem] bg-[#6741FF]">
-        <img src={shopingCartIcon} alt="" className="h-[1rem] w-[1rem]" />
+        <img src={shopingCartIcon} alt="shopingCartIcon" className="h-[1rem] w-[1rem]" />
         <span className="text-[.8rem] text-white"> 0 basket </span>
-        <img src={dropDownIcon} alt="" className="h-[.5rem] w-[.5rem]" />
+        <img src={dropDownIcon} alt="dropDownIcon" className="h-[.5rem] w-[.5rem]" />
       </div>
     </div>
   );
