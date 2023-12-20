@@ -16,34 +16,70 @@ import phoneIcon from "../assets/phone-icon.svg";
 import locationIcon from "../assets/location-icon.svg";
 import dropDownIcon from "../assets/drop-down-icon.svg";
 import thumbsUp from "../assets/thumbs-up.svg";
+import foodImg from "../assets/food-image.svg";
 import Footer from "../components/layout/Footer";
 
 const data = [
   {
     id: 1,
     title: "Combo rice pack",
-    description:
-      "Two mouth-watering pieces of soulfully beef and friend rice..",
+    description: "Two mouth-watering pieces of soulfully beef and fried rice..",
     pecentage: "50%",
     discountedPrice: "#3,500",
     price: "#1,500",
   },
-  // {
-  //   id: 2,
-  //   title: "Pottage beans",
-  //   description:
-  //     "Two mouth-watering pieces of soulfully beef and friend rice served with",
-  //   pecentage: "50%",
-  //   discountedPrice: "#3,500",
-  //   price: "#1,500",
-  // },
+  {
+    id: 2,
+    title: "Pottage beans",
+    description:
+      "Two mouth-watering pieces of soulfully beef and friend rice served with",
+    pecentage: "50%",
+    discountedPrice: "#3,500",
+    price: "#1,500",
+  },
+  {
+    id: 3,
+    title: "Pottage beans",
+    description:
+      "Two mouth-watering pieces of soulfully beef and friend rice served with",
+    pecentage: "50%",
+    discountedPrice: "#3,500",
+    price: "#1,500",
+  },
+  {
+    id: 4,
+    title: "Pottage beans",
+    description:
+      "Two mouth-watering pieces of soulfully beef and friend rice served with",
+    pecentage: "50%",
+    discountedPrice: "#3,500",
+    price: "#1,500",
+  },
+  {
+    id: 5,
+    title: "Pottage beans",
+    description:
+      "Two mouth-watering pieces of soulfully beef and friend rice served with",
+    pecentage: "50%",
+    discountedPrice: "#3,500",
+    price: "#1,500",
+  },
+  {
+    id: 6,
+    title: "Pottage beans",
+    description:
+      "Two mouth-watering pieces of soulfully beef and friend rice served with",
+    pecentage: "50%",
+    discountedPrice: "#3,500",
+    price: "#1,500",
+  },
 ];
 
 const HomePage = () => {
   return (
     <div>
       <Header />
-      <div className="container mx-auto py-6 px-32">
+      <div className="container mx-auto py-6 px-32 ">
         <div className="w-[15.75rem] h-[2.75rem]  flex items-center justify-between px-4">
           <img src={homeIcon} alt="" className="h-[1.3rem] w-[1.3rem]" />
           <span className="text-[#48505E]">/</span>
@@ -162,24 +198,39 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div>
-          <h3 className=" font-bold  text-[1.5rem]  ">Most popular</h3>
-          <div>
+        <div className="mt-[2rem]">
+          <h3 className=" font-bold  text-[1.5rem] mb-4 ">Most popular</h3>
+          <div className="grid grid-cols-2 gap-4">
             {data.map((item) => (
-              <div key={item.id} className=" border-2 border-[#D9DCE2] w-[31rem] h-[10.375rem] ">
-                <div className=" w-[12.27rem] border-2 border-[#D9DCE2]">
-                  <h4>{item.title}</h4>
-                  <p>{item.description}</p>
-                  <div className=" flex items-center justify-between ">
+              <div
+                key={item.id}
+                className=" border-2 border-[#D9DCE2] w-[31rem] h-[10.375rem] flex justify-between px-4  items-center rounded-[.4rem]  "
+              >
+                <div className=" w-[12.27rem] ">
+                  <h4 className=" font-bold ">{item.title}</h4>
+                  <p className="text-[0.87rem] text-[#858D9D]">
+                    {item.description}
+                  </p>
+                  <div className=" flex items-center justify-between w-[10rem] ">
                     <img src={thumbsUp} alt="thumbsUp" />
-                    <span>{item.pecentage}</span>
-                    <span> . </span>
-                    <span>{item.discountedPrice}</span>
-                    <span>{item.price}</span>
+                    <span className="text-[0.87rem] text-[#2B2F38] font-semibold">
+                      {item.pecentage}
+                    </span>
+                    <span className="text-[#48505E] font-extrabold mt-[-.4rem] ">
+                      {" "}
+                      .{" "}
+                    </span>
+                    <span className="text-[#EE2024] line-through text-[0.87rem] font-semibold ">
+                      {" "}
+                      {item.discountedPrice}
+                    </span>
+                    <span className="text-[0.87rem] text-[#2B2F38] font-semibold ">
+                      {item.price}
+                    </span>
                   </div>
                 </div>
                 <div>
-                  <img src="" alt="" />
+                  <img src={foodImg} alt="foodImg" />
                 </div>
               </div>
             ))}
