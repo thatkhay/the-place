@@ -200,7 +200,83 @@ const HomePage = () => {
         </div>
         <div className="mt-[2rem]">
           <h3 className=" font-bold  text-[1.5rem] mb-4 ">Most popular</h3>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-8">
+            {data.map((item) => (
+              <div
+                key={item.id}
+                className=" border-2 border-[#D9DCE2] w-[31rem] h-[10.375rem] flex justify-between px-4  items-center rounded-[.4rem]  "
+              >
+                <div className=" w-[12.27rem] ">
+                  <h4 className=" font-bold ">{item.title}</h4>
+                  <p className="text-[0.87rem] text-[#858D9D]">
+                    {item.description}
+                  </p>
+                  <div className=" flex items-center justify-between w-[10rem] ">
+                    <img src={thumbsUp} alt="thumbsUp" />
+                    <span className="text-[0.87rem] text-[#2B2F38] font-semibold">
+                      {item.pecentage}
+                    </span>
+                    <span className="text-[#48505E] font-extrabold mt-[-.4rem] ">
+                      {" "}
+                      .{" "}
+                    </span>
+                    <span className="text-[#EE2024] line-through text-[0.87rem] font-semibold ">
+                      {" "}
+                      {item.discountedPrice}
+                    </span>
+                    <span className="text-[0.87rem] text-[#2B2F38] font-semibold ">
+                      {item.price}
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <img src={foodImg} alt="foodImg" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mt-[2rem]">
+          <h3 className=" font-bold  text-[1.5rem] mb-4 ">Most popular</h3>
+          <div className="grid grid-cols-2 gap-8">
+            {data.map((item) => (
+              <div
+                key={item.id}
+                className=" border-2 border-[#D9DCE2] w-[31rem] h-[10.375rem] flex justify-between px-4  items-center rounded-[.4rem]  "
+              >
+                <div className=" w-[12.27rem] ">
+                  <h4 className=" font-bold ">{item.title}</h4>
+                  <p className="text-[0.87rem] text-[#858D9D]">
+                    {item.description}
+                  </p>
+                  <div className=" flex items-center justify-between w-[10rem] ">
+                    <img src={thumbsUp} alt="thumbsUp" />
+                    <span className="text-[0.87rem] text-[#2B2F38] font-semibold">
+                      {item.pecentage}
+                    </span>
+                    <span className="text-[#48505E] font-extrabold mt-[-.4rem] ">
+                      {" "}
+                      .{" "}
+                    </span>
+                    <span className="text-[#EE2024] line-through text-[0.87rem] font-semibold ">
+                      {" "}
+                      {item.discountedPrice}
+                    </span>
+                    <span className="text-[0.87rem] text-[#2B2F38] font-semibold ">
+                      {item.price}
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <img src={foodImg} alt="foodImg" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mt-[2rem]">
+          <h3 className=" font-bold  text-[1.5rem] mb-4 ">Most popular</h3>
+          <div className="grid grid-cols-2 gap-8">
             {data.map((item) => (
               <div
                 key={item.id}
