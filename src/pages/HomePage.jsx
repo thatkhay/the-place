@@ -15,7 +15,30 @@ import redirectIcon from "../assets/redirect-icon.svg";
 import phoneIcon from "../assets/phone-icon.svg";
 import locationIcon from "../assets/location-icon.svg";
 import dropDownIcon from "../assets/drop-down-icon.svg";
+import thumbsUp from "../assets/thumbs-up.svg";
 import Footer from "../components/layout/Footer";
+
+const data = [
+  {
+    id: 1,
+    title: "Combo rice pack",
+    description:
+      "Two mouth-watering pieces of soulfully beef and friend rice..",
+    pecentage: "50%",
+    discountedPrice: "#3,500",
+    price: "#1,500",
+  },
+  // {
+  //   id: 2,
+  //   title: "Pottage beans",
+  //   description:
+  //     "Two mouth-watering pieces of soulfully beef and friend rice served with",
+  //   pecentage: "50%",
+  //   discountedPrice: "#3,500",
+  //   price: "#1,500",
+  // },
+];
+
 const HomePage = () => {
   return (
     <div>
@@ -101,22 +124,65 @@ const HomePage = () => {
           <div className="border-2 border-[#F0F1F3] w-[24.375rem] h-[26.437rem] rounded-[.4rem] items-center">
             <img src={mapImg} alt="mapImg" />
             <div className="flex items-center justify-between px-4 h-[6.5rem] border-b-2 border-[#D9DCE2]">
-              <img src={locationIcon} alt="locationIcon" className="h-[1.5rem] w-[1.5rem]"/>
+              <img
+                src={locationIcon}
+                alt="locationIcon"
+                className="h-[1.5rem] w-[1.5rem]"
+              />
               <p className="ml-[-3rem]">
                 38b, Adeyemo Doherty Street, <br /> Lekki Phase 1, Lagos Nigeria
               </p>
-              <img src={redirectIcon} alt="redirectIcon" className="h-[0.75rem] w-[0.75rem]"/>
+              <img
+                src={redirectIcon}
+                alt="redirectIcon"
+                className="h-[0.75rem] w-[0.75rem]"
+              />
             </div>
             <div className="flex items-center justify-between px-4 h-[4.75rem] border-b-2 border-[#D9DCE2]">
-              <img src={clockIcon} alt="clockIcon" className="h-[1.5rem] w-[1.5rem]"/>
+              <img
+                src={clockIcon}
+                alt="clockIcon"
+                className="h-[1.5rem] w-[1.5rem]"
+              />
               <p className="ml-[-10rem]">Opening Hour</p>
               <img src={dropDownIcon} alt="dropDownIcon" />
             </div>
-           <div className="flex items-center justify-between px-4 h-[4.75rem] ">
-              <img src={phoneIcon} alt="phoneIcon" className="h-[1.5rem] w-[1.5rem]" />
+            <div className="flex items-center justify-between px-4 h-[4.75rem] ">
+              <img
+                src={phoneIcon}
+                alt="phoneIcon"
+                className="h-[1.5rem] w-[1.5rem]"
+              />
               <p className="ml-[-9rem]">+2348106744642</p>
-              <img src={redirectIcon} alt="redirectIcon" className="h-[0.75rem] w-[0.75rem]"/>
+              <img
+                src={redirectIcon}
+                alt="redirectIcon"
+                className="h-[0.75rem] w-[0.75rem]"
+              />
             </div>
+          </div>
+        </div>
+        <div>
+          <h3 className=" font-bold  text-[1.5rem]  ">Most popular</h3>
+          <div>
+            {data.map((item) => (
+              <div key={item.id} className=" border-2 border-[#D9DCE2] w-[31rem] h-[10.375rem] ">
+                <div className=" w-[12.27rem] border-2 border-[#D9DCE2]">
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                  <div className=" flex items-center justify-between ">
+                    <img src={thumbsUp} alt="thumbsUp" />
+                    <span>{item.pecentage}</span>
+                    <span> . </span>
+                    <span>{item.discountedPrice}</span>
+                    <span>{item.price}</span>
+                  </div>
+                </div>
+                <div>
+                  <img src="" alt="" />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
