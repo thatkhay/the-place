@@ -17,6 +17,16 @@ import locationIcon from "../assets/location-icon.svg";
 import dropDownIcon from "../assets/drop-down-icon.svg";
 import thumbsUp from "../assets/thumbs-up.svg";
 import foodImg from "../assets/food-image.svg";
+import progressBarOne from "../assets/progress-bar-1.svg";
+import progressBarTwo from "../assets/progress-bar-2.svg";
+import progressBarThree from "../assets/progress-bar-3.svg";
+import progressBarFour from "../assets/progress-bar-4.svg";
+import progressBarFive from "../assets/progress-bar-5.svg";
+import loveEyeEmoji from "../assets/emoji_smiling_face_with_heart-eyes.svg";
+import fullSmileEmoji from "../assets/emoji_grinning_face.svg";
+import grinEmoji from "../assets/emoji_slightly_smiling_face.svg";
+import sadEmoji from "../assets/emoji_persevering_face.svg";
+import cryEmoji from "../assets/emoji_weary_face.svg";
 import Footer from "../components/layout/Footer";
 
 const data = [
@@ -98,12 +108,12 @@ const HomePage = () => {
             />
           </div>
 
-          <div class="absolute left-8 buttom-[17.5rem]">
-            {/* <img
+          <div class="absolute left-8  bottom-[-3rem]">
+            <img
               src={storeLogo}
               alt="Store Logo"
               class="h-[6.375rem] w-[6.375rem]"
-            /> */}
+            />
           </div>
         </div>
         <div className="flex justify-between">
@@ -131,14 +141,40 @@ const HomePage = () => {
               <img src={tagIcon} alt="" className="mr-4 " />
               <p>12 % off some selected products</p>
             </div>
-            <div className="flex  flex-col items-center  w-[37.75rem] h-[23.75rem] border-2 border-[#F0F1F3] p-8 rounded-[.4rem] mt-6">
-              <div className="flex items-center justify-between w-[34.75rem] h-[9.75rem] border-b-2 border-b-[#D9DCE2] mt-[-2rem]">
+            <div className="flex  flex-col items-center  w-[37.75rem] h-[23.75rem] border-[.5px] border-[#F0F1F3] p-8 rounded-[.4rem] mt-6">
+              <div className="flex items-center justify-between w-[34.75rem] h-[9.75rem] border-b-[.5px] border-b-[#D9DCE2] mt-[-2rem]">
                 <div className="flex items-center flex-col">
                   <h2 className="text-[2rem] font-bold">4.5</h2>
                   <img src={ratingStarIcon} alt="" />
                   <p>462 reviews</p>
                 </div>
-                <div>ratings</div>
+                <div>
+                  <div className="flex">
+                    <img src={loveEyeEmoji} alt="" />
+                    <img src={progressBarOne} alt="" />
+                    <span>245</span>
+                  </div>
+                  <div className="flex">
+                    <img src={fullSmileEmoji} alt="" />
+                    <img src={progressBarFive} alt="" />
+                    <span>245</span>
+                  </div>
+                  <div className="flex">
+                    <img src={grinEmoji} alt="" />
+                    <img src={progressBarFive} alt="" />
+                    <span>245</span>
+                  </div>
+                  <div className="flex">
+                    <img src={sadEmoji} alt="" />
+                    <img src={progressBarThree} alt="" />
+                    <span>245</span>
+                  </div>
+                  <div className="flex">
+                    <img src={cryEmoji} alt="" />
+                    <img src={progressBarTwo} alt="" />
+                    <span>245</span>
+                  </div>
+                </div>
               </div>
               <div className="mt-[2rem]">
                 <div className="flex items-center justify-between w-[36rem] mb-2">
@@ -157,9 +193,9 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="border-2 border-[#F0F1F3] w-[24.375rem] h-[26.437rem] rounded-[.4rem] items-center">
+          <div className="border-[.5px] border-[#F0F1F3] w-[24.375rem] h-[26.437rem] rounded-[.4rem] items-center">
             <img src={mapImg} alt="mapImg" />
-            <div className="flex items-center justify-between px-4 h-[6.5rem] border-b-2 border-[#D9DCE2]">
+            <div className="flex items-center justify-between px-4 h-[6.5rem] border-b-[.5px] border-[#D9DCE2]">
               <img
                 src={locationIcon}
                 alt="locationIcon"
@@ -174,7 +210,7 @@ const HomePage = () => {
                 className="h-[0.75rem] w-[0.75rem]"
               />
             </div>
-            <div className="flex items-center justify-between px-4 h-[4.75rem] border-b-2 border-[#D9DCE2]">
+            <div className="flex items-center justify-between px-4 h-[4.75rem] border-b-[.5px] border-[#D9DCE2]">
               <img
                 src={clockIcon}
                 alt="clockIcon"
@@ -204,7 +240,7 @@ const HomePage = () => {
             {data.map((item) => (
               <div
                 key={item.id}
-                className=" border-2 border-[#D9DCE2] w-[31rem] h-[10.375rem] flex justify-between px-4  items-center rounded-[.4rem]  "
+                className=" border-[.5px] border-[#D9DCE2] w-[31rem] h-[10.375rem] flex justify-between px-4  items-center rounded-[.4rem]  "
               >
                 <div className=" w-[12.27rem] ">
                   <h4 className=" font-bold ">{item.title}</h4>
@@ -242,7 +278,7 @@ const HomePage = () => {
             {data.map((item) => (
               <div
                 key={item.id}
-                className=" border-2 border-[#D9DCE2] w-[31rem] h-[10.375rem] flex justify-between px-4  items-center rounded-[.4rem]  "
+                className=" border-[.5px] border-[#D9DCE2] w-[31rem] h-[10.375rem] flex justify-between px-4  items-center rounded-[.4rem]  "
               >
                 <div className=" w-[12.27rem] ">
                   <h4 className=" font-bold ">{item.title}</h4>
@@ -280,7 +316,7 @@ const HomePage = () => {
             {data.map((item) => (
               <div
                 key={item.id}
-                className=" border-2 border-[#D9DCE2] w-[31rem] h-[10.375rem] flex justify-between px-4  items-center rounded-[.4rem]  "
+                className=" border-[.5px] border-[#D9DCE2] w-[31rem] h-[10.375rem] flex justify-between px-4  items-center rounded-[.4rem]  "
               >
                 <div className=" w-[12.27rem] ">
                   <h4 className=" font-bold ">{item.title}</h4>
