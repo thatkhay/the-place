@@ -116,7 +116,7 @@ const HomePage = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between xsm:flex-col sm:flex-col md:flex-col lg:flex-row">
           <div>
             <div className="flex w-[31rem] items-center justify-between pr-[3rem]">
               <h5 className="font-bold text-[1.6rem]">The place - Admiralty</h5>
@@ -236,7 +236,7 @@ const HomePage = () => {
         </div>
         <div className="mt-[2rem]">
           <h3 className=" font-bold  text-[1.5rem] mb-4 ">Most popular</h3>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
             {data.map((item) => (
               <div
                 key={item.id}
@@ -274,7 +274,7 @@ const HomePage = () => {
         </div>
         <div className="mt-[2rem]">
           <h3 className=" font-bold  text-[1.5rem] mb-4 ">Most popular</h3>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
             {data.map((item) => (
               <div
                 key={item.id}
@@ -312,7 +312,7 @@ const HomePage = () => {
         </div>
         <div className="mt-[2rem]">
           <h3 className=" font-bold  text-[1.5rem] mb-4 ">Most popular</h3>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
             {data.map((item) => (
               <div
                 key={item.id}
