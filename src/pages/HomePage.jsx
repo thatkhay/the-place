@@ -87,9 +87,9 @@ const data = [
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="w-full flex items-center flex-col">
       <Header />
-      <div className="container mx-auto py-6 px-32 xsm:px-10 sm:px-32 md:px-32 lg:px-32 ">
+      <div className="container mx-auto py-6 px-32 xsm:px-0 sm:px-0 md:px-32 lg:px-32 ">
         <div className="w-[15.75rem] h-[2.75rem]  flex items-center justify-between px-4">
           <img src={homeIcon} alt="" className="h-[1.3rem] w-[1.3rem]" />
           <span className="text-[#48505E]">/</span>
@@ -239,7 +239,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="mt-[2rem]">
-          <h3 className=" font-bold  text-[1.5rem] mb-4 ">Most popular</h3>
+          <h3 className=" font-bold  text-[1.5rem] mb-4">Most popular</h3>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
             {data.map((item) => (
               <div
