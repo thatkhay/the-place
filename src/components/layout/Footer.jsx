@@ -6,7 +6,7 @@ import appStoreLogo from "../../assets/app-store-logo.svg";
 const Footer = () => {
   return (
     <div className=" w-full  h-[26.8rem]  mt-10 bg-[#FFFFFF] pl-16 pr-16 ">
-      <div className="flex items-center justify-between mt-10  h-[9rem] pr-[10rem]">
+      <div className="flex items-center justify-between mt-10  h-[9rem] pr-[5rem]">
         <img src={logo} alt="" className=" h-[4.4581rem] w-[6.687rem] " />
         <div>
           <h4 className=" font-semibold text-[#2B2F38] mb-2 ">SWOOPPI</h4>
