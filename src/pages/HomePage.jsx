@@ -89,7 +89,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <div className="container mx-auto py-6 px-32 ">
+      <div className="container mx-auto py-6 px-32 xsm:px-10 sm:px-32 md:px-32 lg:px-32 ">
         <div className="w-[15.75rem] h-[2.75rem]  flex items-center justify-between px-4">
           <img src={homeIcon} alt="" className="h-[1.3rem] w-[1.3rem]" />
           <span className="text-[#48505E]">/</span>
@@ -97,8 +97,8 @@ const HomePage = () => {
           <span className="text-[#48505E]">/</span>
           <p className="text-[#48505E]">Resturant</p>
         </div>
-        <div class="relative mt-6 mb-16">
-          <img src={banner} alt="Banner" />
+        <div class="relative mt-6 mb-16 xsm:w-[30rem] md:w-[35rem] sm:w-[35rem] lg:w-[65rem]">
+          <img src={banner} alt="Banner" className="" />
 
           <div class="absolute top-4 right-4">
             <img
@@ -116,15 +116,15 @@ const HomePage = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between xsm:flex-col sm:flex-col md:flex-col lg:flex-row">
-          <div>
+        <div className="flex justify-between xsm:flex-col sm:flex-col md:flex-col lg:flex-row  xsm:w-[30rem] md:w-[35rem] sm:w-30rem] lg:w-[65rem]">
+          <div className="">
             <div className="flex w-[31rem] items-center justify-between pr-[3rem]">
               <h5 className="font-bold text-[1.6rem]">The place - Admiralty</h5>
-              <img src={swooppersIcon} alt="" />
+              <img src={swooppersIcon} alt="swooppersIcon" />
               <span className=" font-bold text-[2rem] text-[#FD6E5D] mt-[-1.5rem]">
                 .
               </span>
-              <img src={pickupIcon} alt="" />
+              <img src={pickupIcon} alt="pickupIcon" />
             </div>
             <div className="flex w-[18.8rem] h-[3rem] items-center justify-between mt-6">
               <div className="flex flex-col">
@@ -137,12 +137,12 @@ const HomePage = () => {
                 <img src={starIcon} alt="" className="mr-2" /> <span>4.5</span>
               </div>
             </div>
-            <div className="flex items-center bg-[#00E3A4] w-[37.75rem] h-[3rem] px-8 rounded-[.4rem] mt-6">
+            <div className="flex items-center bg-[#00E3A4] w-[37.75rem] h-[3rem] px-8 rounded-[.4rem] mt-6 xsm:w-[30rem] md:w-[35rem] sm:w-30rem]">
               <img src={tagIcon} alt="" className="mr-4 " />
               <p>12 % off some selected products</p>
             </div>
-            <div className="flex  flex-col items-center  w-[37.75rem] h-[23.75rem] border-[.5px] border-[#F0F1F3] p-8 rounded-[.4rem] mt-6">
-              <div className="flex items-center justify-between w-[34.75rem] h-[9.75rem] border-b-[.5px] border-b-[#D9DCE2] mt-[-2rem]">
+            <div className="flex  flex-col items-center  w-[37.75rem] h-[23.75rem] border-[.5px] border-[#F0F1F3] py-8  rounded-[.4rem] mt-6 xsm:w-[30rem] md:w-[35rem] sm:w-[30rem]">
+              <div className="flex items-center justify-between w-[34.75rem] lg:h-[9.75rem] xsm:h-[15rem]  border-b-[.5px] border-b-[#D9DCE2] sm:border-b-none  mt-[-2rem] xsm:flex-col sm:flex-col md:flex-col lg:flex-row px-4 xsm:w-[30rem] md:w-[35rem] sm:w-[30rem] ">
                 <div className="flex items-center flex-col">
                   <h2 className="text-[2rem] font-bold">4.5</h2>
                   <img src={ratingStarIcon} alt="" />
@@ -151,45 +151,49 @@ const HomePage = () => {
                 <div>
                   <div className="flex">
                     <img src={loveEyeEmoji} alt="" />
-                    <img src={progressBarOne} alt=""  className=" px-2 " />
+                    <img src={progressBarOne} alt="" className=" px-2 " />
                     <span>245</span>
                   </div>
                   <div className="flex">
                     <img src={fullSmileEmoji} alt="" />
-                    <img src={progressBarFive} alt="" className=" px-2 "/>
+                    <img src={progressBarFive} alt="" className=" px-2 " />
                     <span>30</span>
                   </div>
                   <div className="flex">
                     <img src={grinEmoji} alt="" />
-                    <img src={progressBarFive} alt="" className=" px-2 "/>
+                    <img src={progressBarFour} alt="" className=" px-2 " />
                     <span>20</span>
                   </div>
                   <div className="flex">
                     <img src={sadEmoji} alt="" />
-                    <img src={progressBarThree} alt="" className=" px-2 "/>
+                    <img src={progressBarThree} alt="" className=" px-2 " />
                     <span>10</span>
                   </div>
                   <div className="flex">
                     <img src={cryEmoji} alt="" />
-                    <img src={progressBarTwo} alt="" className=" px-2 "/>
+                    <img src={progressBarTwo} alt="" className=" px-2 " />
                     <span>05</span>
                   </div>
                 </div>
               </div>
-              <div className="mt-[2rem]">
-                <div className="flex items-center justify-between w-[36rem] mb-2">
+              <div className="mt-[2rem] ">
+                <div className="flex items-center justify-between w-[36rem] mb-2 xsm:w-[25rem] md:w-[35rem] sm:w-[25rem] px-4">
                   <h5 className="text-[#48505E] font-bold">Gideon O .</h5>
-                  <p className="text-[#667085] text-[0.75rem]">August 25, 2023</p>
+                  <p className="text-[#667085] text-[0.75rem]">
+                    August 25, 2023
+                  </p>
                 </div>
-                <div className="flex w-[1.87rem] mb-2">
-                  <img src={starIcon} alt="starIcon" className="mr-2 " />
-                  <span className="text-[#48505E]">4</span>
+                <div className="px-4">
+                  <div className="flex w-[1.87rem] mb-2 ">
+                    <img src={starIcon} alt="starIcon" className="mr-2 " />
+                    <span className="text-[#48505E]">4</span>
+                  </div>
                 </div>
-                <p className="mb-4 text-[#667085]">
+                <p className="mb-4 text-[#667085] px-4">
                   I so much like the food, especially the turkey. It was so
                   delicious. Nice <br /> packaging too.
                 </p>
-                <p className="text-[#6741FF] font-bold">See more reviews</p>
+                <p className="text-[#6741FF] font-bold px-4">See more reviews</p>
               </div>
             </div>
           </div>
