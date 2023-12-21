@@ -197,8 +197,8 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="border-[.5px] border-[#F0F1F3] w-[24.375rem] h-[26.437rem] rounded-[.4rem] items-center">
-            <img src={mapImg} alt="mapImg" />
+          <div className="border-[.5px] border-[#F0F1F3] w-[24.375rem] h-[26.437rem] rounded-[.4rem] items-center xsm:mt-20 lg:mt-0 sm:mt-20 md:mt-20">
+            <img src={mapImg} alt="mapImg" className=" "/>
             <div className="flex items-center justify-between px-4 h-[6.5rem] border-b-[.5px] border-[#D9DCE2]">
               <img
                 src={locationIcon}
