@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../../assets/my-logo.svg";
-import googlePlayLogo from "../../assets/play-store-logo.svg";
-import appStoreLogo from "../../assets/app-store-logo.svg";
+// import logo from "../../assets/my-logo.svg";
+// import googlePlayLogo from "../../assets/play-store-logo.svg";
+// import appStoreLogo from "../../assets/app-store-logo.svg";
 
 const Footer = () => {
   return (
-    <div className="w-[75rem] xsm:w-[35rem] flex flex-col items-center justify-start h-[26.8rem] mt-10 bg-[#FFFFFF] pl-16 pr-16 lg:ml-0 xsm:ml-[5.5rem]">
-      <div className="flex justify-between  mt-10 h-[9rem] pr-[5rem] w-full">
+    <div className="lg:max-w-[75rem] md:max-w-[75rem] sm:max-w-[35rem] w-[90%] xsm:max-w-[35rem] flex flex-col items-center lg:justify-start xsm:justify-start sm:justify-start md:justify-start  h-[26.8rem] mt-10 bg-[#FFFFFF] pl-16 pr-16 lg:ml-0 xsm:ml-[5.5rem] ">
+      {/* <div className="flex justify-between  mt-10 h-[9rem] pr-[5rem] w-full">
         <img src={logo} alt="" className="h-[4.4581rem] w-[6.687rem]" />
         <div className="flex flex-col ml-8">
           <h4 className="font-semibold text-[#2B2F38] mb-2">SWOOPPI</h4>
@@ -44,7 +44,7 @@ const Footer = () => {
         <p className="text-[.875rem] text-[#48505E] mt-8 w-[20rem] text-center">
           ©Swooppi Inc. 2023. All Rights Reserved.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

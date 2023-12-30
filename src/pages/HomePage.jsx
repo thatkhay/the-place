@@ -90,7 +90,7 @@ const HomePage = () => {
     <div className="w-full flex items-center justify-center flex-col">
       <Header />
       <div className="container mx-auto py-6 px-32 xsm:px-0 sm:px-0 md:px-32 lg:px-32 ">
-        <div className="w-[15.75rem] h-[2.75rem]  flex items-center justify-between px-4">
+        <div className="max-w-[15.75rem] h-[2.75rem]  flex items-center justify-between px-4">
           <img src={homeIcon} alt="" className="h-[1.3rem] w-[1.3rem] " />
           <span className="text-[#48505E]">/</span>
           <p className="text-[#48505E]">Pizza</p>
